@@ -9,9 +9,16 @@
 <ul>
   @foreach (Place place in Model)
   {
-    <li>@place.CityName</li>
+    <li><a href='/places/@place.Id'>@place.CityName</a></li>
   }
 </ul>
 
 <p><a href="/places/new">Add another place</a></p>
 <p><a href="/">Go back to homepage</a></p>
+
+
+
+@* 
+Two Columns Display: Places I've Visited || Places I want to Visit Again
+                      -                       - Portland (true)
+                      - Haiti (false) *@
